@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  height: 100vh;
+  background: #E3F6FF;
+
+  .header-content {
+    display: flex;
+
+    .service-center {
+      padding-top: 108px;
+
+      .service-center-label {
+        font-family: Unbounded, sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 74.4px;
+        text-align: left;
+      }
+
+      hr {
+        width: 100px;
+        height: 3px;
+        margin-left: 0;
+        background: #008ED1;
+        border: none;
+      }
+
+      .service-center-text {
+        font-family: Roboto Flex, sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 37.5px;
+        text-align: left;
+      }
+    }
+
+    .image-container {
+      img {
+        position: absolute;
+        top: -30px;
+        left: 800px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.nav-panel {
+  display: flex;
+
+  .nav-buttons {
+    padding-left: 108px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    li {
+      margin-right: 25px;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    span {
+      display: flex;
+      align-items: center;
+
+      &.address {
+        margin-right: 40px;
+      }
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
