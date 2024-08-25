@@ -10,6 +10,29 @@ body {
   text-align: left;
 }
 
+h1 {
+  font-family: Unbounded, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 74.4px;
+  text-align: left;
+}
+
+h2 {
+  font-family: Unbounded, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49.6px;
+}
+
+.align-center {
+  text-align: center;
+}
+
 .section-content {
-  padding: 35px 100px;
+  padding: 120px 100px;
+
+  &.first-section {
+    padding-top: 35px;
+  }
 }

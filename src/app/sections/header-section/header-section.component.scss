@@ -9,14 +9,6 @@
     .service-center {
       padding-top: 108px;
 
-      .service-center-label {
-        font-family: Unbounded, sans-serif;
-        font-size: 60px;
-        font-weight: 600;
-        line-height: 74.4px;
-        text-align: left;
-      }
-
       hr {
         width: 100px;
         height: 3px;
@@ -35,11 +27,11 @@
     }
 
     .image-container {
-      img {
-        position: absolute;
-        top: -30px;
-        left: 800px;
-      }
+      position: absolute;
+      top: -30px;
+      left: 800px;
+      height: calc(100vh + 30px);
+      overflow-y: hidden;
     }
   }
 }
