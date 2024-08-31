@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {ComfortComponent} from "../maintance-section/comfort/comfort.component";
-import {InstructionComponent} from "../maintance-section/instruction/instruction.component";
+import {ComfortComponent} from "./comfort/comfort.component";
+import {InstructionComponent} from "./instruction/instruction.component";
 
 @Component({
   selector: 'app-main-description-section',

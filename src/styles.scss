@@ -16,6 +16,7 @@ h1 {
   font-weight: 600;
   line-height: 74.4px;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -23,6 +24,22 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 49.6px;
+}
+
+h5 {
+  font-family: Roboto Flex, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+}
+
+hr.blue-short-line {
+  width: 100px;
+  height: 3px;
+  margin-left: 0;
+  margin-bottom: 30px;
+  background: #008ED1;
+  border: none;
 }
 
 .align-center {
