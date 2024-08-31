@@ -1,2 +1,7 @@
 <h2 class="align-center">Зручність для вас - наш пріоритет!</h2>
+<div class="facilities">
+  @for (facility of facilities; track facility.title) {
+    <app-facility [facility]="facility"></app-facility>
+  }
+</div>
 
