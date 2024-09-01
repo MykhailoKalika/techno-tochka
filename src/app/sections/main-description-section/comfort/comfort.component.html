@@ -1,6 +1,6 @@
 <h2 class="align-center">Зручність для вас - наш пріоритет!</h2>
 <div class="facilities">
-  @for (facility of facilities; track facility.title) {
+  @for (facility of facilities; track $index) {
     <app-facility [facility]="facility"></app-facility>
   }
 </div>

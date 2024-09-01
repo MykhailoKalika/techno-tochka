@@ -13,5 +13,5 @@ import {NgOptimizedImage} from "@angular/common";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FacilityComponent {
-  @Input() facility!: FacilityModel;
+  @Input({required: true}) facility!: FacilityModel;
 }

@@ -1,0 +1,12 @@
+.numbers-title {
+  margin-top: 0;
+}
+
+.facts {
+  display: flex;
+  justify-content: space-between;
+
+  app-countable-fact {
+    width: 20vw;
+  }
+}

@@ -1,1 +1,8 @@
-<p>numbers-section works!</p>
+<div class="section-content secondary-color-background">
+  <h2 class="numbers-title align-center">Про нас все скажуть цифри</h2>
+  <div class="facts">
+    @for (fact of facts; track $index) {
+      <app-countable-fact [fact]="fact"></app-countable-fact>
+    }
+  </div>
+</div>
