@@ -1,0 +1,32 @@
+:host {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      font-family: Roboto Flex, sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 37.5px;
+      padding-bottom: 15px;
+    }
+
+    td {
+      font-family: Roboto Flex, sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 30.47px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    td:first-child, th:first-child {
+      padding-left: 100px;
+    }
+
+    td:last-child, th:last-child {
+      text-align: end;
+      padding-right: 100px;
+    }
+  }
+}

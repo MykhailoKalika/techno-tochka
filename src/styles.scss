@@ -4,6 +4,12 @@
 // todo refactor theming
 $secondary-color: #E3F6FF;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Roboto Flex, serif;
@@ -62,6 +68,11 @@ section {
   &.first-section {
     padding-top: 35px;
   }
+}
+
+section.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .secondary-color-background {
