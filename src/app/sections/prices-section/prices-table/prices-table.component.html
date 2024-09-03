@@ -3,7 +3,7 @@
     <th>Перелік робіт</th>
     <th>Вартість</th>
   </tr>
-  @for(service of pricings; track $index) {
+  @for (service of pricings; track $index) {
     <tr [class.secondary-color-background]="!($index % 2)">
       <td>{{service.serviceTitle}}</td>
       <td>{{service.priceTitle}}</td>

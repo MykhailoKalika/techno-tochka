@@ -10,6 +10,7 @@ import {HowDoWeWorkSectionComponent} from "./sections/how-do-we-work-section/how
 import {NumbersSectionComponent} from "./sections/numbers-section/numbers-section.component";
 import {ReviewsModule} from "./reviews/reviews.module";
 import {PopularQuestionsComponent} from "./sections/popular-questions/popular-questions.component";
+import {WaitingComponent} from "./sections/waiting/waiting.component";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +24,8 @@ import {PopularQuestionsComponent} from "./sections/popular-questions/popular-qu
     HowDoWeWorkSectionComponent,
     NumbersSectionComponent,
     ReviewsModule,
-    PopularQuestionsComponent
+    PopularQuestionsComponent,
+    WaitingComponent
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],

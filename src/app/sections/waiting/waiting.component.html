@@ -1,0 +1,11 @@
+<section class="pt-0">
+  <h2 class="align-center">Чим зайнятись поки майстер ремонтує ваш пристрій?</h2>
+  <div class="activities">
+    @for (activity of activities; track $index) {
+      <div class="activity-container">
+        <img alt="facility-image" ngSrc="{{activity.imageUrl}}" [width]="320" [height]="360"/>
+        <span>{{activity.description}}</span>
+      </div>
+    }
+  </div>
+</section>
