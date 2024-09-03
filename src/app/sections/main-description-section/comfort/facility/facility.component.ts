@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {FacilityModel} from "../../../../models/facility.model";
+import {IFacility} from "../../../../interfaces/facility.interface";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
@@ -13,5 +13,5 @@ import {NgOptimizedImage} from "@angular/common";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FacilityComponent {
-  @Input({required: true}) facility!: FacilityModel;
+  @Input({required: true}) facility!: IFacility;
 }

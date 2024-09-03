@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {FacilityComponent} from "./facility/facility.component";
 import {NgForOf} from "@angular/common";
-import {FacilityModel} from "../../../models/facility.model";
+import {IFacility} from "../../../interfaces/facility.interface";
 
 @Component({
   selector: 'app-comfort',
@@ -15,12 +15,26 @@ import {FacilityModel} from "../../../models/facility.model";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ComfortComponent {
-  facilities: FacilityModel[] = [
-    new FacilityModel('/assets/icons/gpay-icon.png', 'Безготівковий розрахунок',
-      'Забезпечує швидкість та ефективність операцій, а також підвищує рівень безпеки та зручності для клієнтів'),
-    new FacilityModel('/assets/icons/message-icon.png', 'Зв’язок з майстром',
-      'Забезпечуємо швидке вирішення проблем та високу якість обслуговування для задоволення потреб клієнтів'),
-    new FacilityModel('/assets/icons/play-icon.png', 'Спостерігання за ремонтом в режимі онлайн',
-      'Забезпечує прозорість, впевненість та зручність для клієнтів, дозволяючи бути в курсі кожного етапу робіт над вашим обладнанням'),
+  facilities: IFacility[] = [
+    {
+      icon: '/assets/icons/gpay-icon.png',
+      title: 'Безготівковий розрахунок',
+      text: 'Забезпечує швидкість та ефективність операцій, а також підвищує рівень безпеки та зручності для клієнтів'
+    },
+    {
+      icon: '/assets/icons/gpay-icon.png',
+      title: 'Безготівковий розрахунок',
+      text: 'Забезпечує швидкість та ефективність операцій, а також підвищує рівень безпеки та зручності для клієнтів'
+    },
+    {
+      icon: '/assets/icons/message-icon.png',
+      title: 'Зв’язок з майстром',
+      text: 'Забезпечуємо швидке вирішення проблем та високу якість обслуговування для задоволення потреб клієнтів'
+    },
+    {
+      icon: '/assets/icons/play-icon.png',
+      title: 'Спостерігання за ремонтом в режимі онлайн',
+      text: 'Забезпечує прозорість, впевненість та зручність для клієнтів, дозволяючи бути в курсі кожного етапу робіт над вашим обладнанням'
+    },
   ];
 }

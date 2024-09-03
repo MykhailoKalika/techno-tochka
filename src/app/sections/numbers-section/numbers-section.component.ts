@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {CountableAdvertFactModel} from "../../models/countable-advert-fact.model";
+import {ICountableAdvertFact} from "../../interfaces/countable-advert-fact.interface";
 import {CountableFactComponent} from "./countable-fact/countable-fact.component";
 
 @Component({
@@ -13,10 +13,10 @@ import {CountableFactComponent} from "./countable-fact/countable-fact.component"
   ]
 })
 export class NumbersSectionComponent {
-  public facts: CountableAdvertFactModel[] = [
-    new CountableAdvertFactModel('11 років', 'займаємося ремонтом техніки'),
-    new CountableAdvertFactModel('20 102', 'відремонтованих пристроїв станом на лютий 2023 року'),
-    new CountableAdvertFactModel('70%', 'техніки ремонтується протягом одного дня'),
-    new CountableAdvertFactModel('95%', 'клієнтів стають постійними рекомендують друзям'),
+  public facts: ICountableAdvertFact[] = [
+    {number: '11 років', description: 'займаємося ремонтом техніки'},
+    {number: '20 102', description: '\'відремонтованих пристроїв станом на лютий 2023 року'},
+    {number: '70%', description: 'техніки ремонтується протягом одного дня'},
+    {number: '95%', description: 'клієнтів стають постійними рекомендують друзям'},
   ];
 }

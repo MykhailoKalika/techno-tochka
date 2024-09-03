@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {CountableAdvertFactModel} from "../../../models/countable-advert-fact.model";
+import {ICountableAdvertFact} from "../../../interfaces/countable-advert-fact.interface";
 
 @Component({
   selector: 'app-countable-fact',
@@ -9,5 +9,5 @@ import {CountableAdvertFactModel} from "../../../models/countable-advert-fact.mo
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CountableFactComponent {
-  @Input({required: true}) fact!: CountableAdvertFactModel;
+  @Input({required: true}) fact!: ICountableAdvertFact;
 }
