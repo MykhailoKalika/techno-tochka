@@ -1,4 +1,4 @@
-import {NgModule, NO_ERRORS_SCHEMA} from "@angular/core";
+import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
 import {RouterOutlet} from "@angular/router";
 import {AsyncPipe} from "@angular/common";
@@ -8,9 +8,9 @@ import {MainDescriptionSectionComponent} from "./sections/main-description-secti
 import {PricesSectionComponent} from "./sections/prices-section/prices-section.component";
 import {HowDoWeWorkSectionComponent} from "./sections/how-do-we-work-section/how-do-we-work-section.component";
 import {NumbersSectionComponent} from "./sections/numbers-section/numbers-section.component";
-import {ReviewsModule} from "./reviews/reviews.module";
 import {PopularQuestionsComponent} from "./sections/popular-questions/popular-questions.component";
 import {WaitingComponent} from "./sections/waiting/waiting.component";
+import {ReviewsComponent} from "./sections/reviews/reviews.component";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,12 +23,11 @@ import {WaitingComponent} from "./sections/waiting/waiting.component";
     PricesSectionComponent,
     HowDoWeWorkSectionComponent,
     NumbersSectionComponent,
-    ReviewsModule,
+    ReviewsComponent,
     PopularQuestionsComponent,
-    WaitingComponent
+    WaitingComponent,
   ],
   bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule {
 }
