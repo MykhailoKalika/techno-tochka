@@ -1,0 +1,38 @@
+:host {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 100px;
+
+  .footer-left {
+    display: flex;
+
+    .links {
+      display: flex;
+      align-items: center;
+      margin-left: 7vw;
+
+      .link {
+        color: white;
+        font-family: Roboto Flex, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 23.44px;
+        text-align: center;
+        text-decoration: underline;
+        padding-right: 25px;
+      }
+    }
+  }
+
+  .year {
+    color: white;
+    font-family: Roboto Flex, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 19.92px;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
