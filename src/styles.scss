@@ -82,3 +82,73 @@ section.no-padding {
 .pt-0 {
   padding-top: 0;
 }
+
+.tm-widget {
+  padding: 0!important;
+}
+
+// mat-expansion
+
+.mat-accordion mat-expansion-panel.mat-expansion-panel {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #CEEFFF;
+  box-shadow: none;
+  border-radius: 0!important;
+
+  .mat-expansion-panel-header {
+    font-family: Roboto Flex, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    &:hover {
+      background-color: transparent!important;
+    }
+
+    .mat-expansion-indicator {
+      display: none;
+    }
+
+    .expansion-button {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &.mat-expanded .expansion-button {
+    .close {
+      display: block;
+    }
+    .open {
+      display: none;
+    }
+  }
+
+  &:not(.mat-expanded) .expansion-button {
+    .close {
+      display: none;
+    }
+    .open {
+      display: block;
+    }
+  }
+
+
+  .mat-expansion-panel-body {
+    font-family: Roboto Flex, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    padding: 0 0 20px !important;
+
+    p {
+      margin: 0;
+    }
+  }
+}

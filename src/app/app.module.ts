@@ -11,11 +11,13 @@ import {NumbersSectionComponent} from "./sections/numbers-section/numbers-sectio
 import {PopularQuestionsComponent} from "./sections/popular-questions/popular-questions.component";
 import {WaitingComponent} from "./sections/waiting/waiting.component";
 import {ReviewsComponent} from "./sections/reviews/reviews.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterOutlet,
     AsyncPipe,
     HeaderSectionComponent,
