@@ -6,7 +6,7 @@ import {CountableFactComponent} from "./countable-fact/countable-fact.component"
   selector: 'app-numbers-section',
   standalone: true,
   templateUrl: './numbers-section.component.html',
-  styleUrl: './numbers-section.component.css',
+  styleUrl: './numbers-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     CountableFactComponent
@@ -15,7 +15,7 @@ import {CountableFactComponent} from "./countable-fact/countable-fact.component"
 export class NumbersSectionComponent {
   public facts: ICountableAdvertFact[] = [
     {number: '11 років', description: 'займаємося ремонтом техніки'},
-    {number: '20 102', description: '\'відремонтованих пристроїв станом на лютий 2023 року'},
+    {number: '20 102', description: 'відремонтованих пристроїв станом на лютий 2023 року'},
     {number: '70%', description: 'техніки ремонтується протягом одного дня'},
     {number: '95%', description: 'клієнтів стають постійними рекомендують друзям'},
   ];

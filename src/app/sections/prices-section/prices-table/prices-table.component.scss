@@ -1,3 +1,13 @@
+@mixin table-padding($padding) {
+  td:first-child, th:first-child {
+    padding-left: $padding;
+  }
+
+  td:last-child, th:last-child {
+    padding-right: $padding;
+  }
+}
+
 :host {
   table {
     width: 100%;
@@ -20,13 +30,14 @@
       padding-bottom: 20px;
     }
 
-    td:first-child, th:first-child {
-      padding-left: 100px;
-    }
-
     td:last-child, th:last-child {
       text-align: end;
-      padding-right: 100px;
+    }
+
+    @include table-padding(100px);
+
+    @media (min-width: 2100px) {
+      @include table-padding(calc((100vw - 1950px) / 2));
     }
   }
 }

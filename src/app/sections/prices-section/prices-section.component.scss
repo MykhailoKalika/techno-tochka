@@ -1,0 +1,24 @@
+@mixin headerPadding($padding) {
+  h2 {
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+
+  .blue-short-line {
+    margin-left: $padding;
+  }
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.blue-short-line {
+  margin-bottom: 40px;
+}
+
+@include headerPadding(100px);
+
+@media (min-width: 2100px) {
+  @include headerPadding(calc((100vw - 1950px) / 2));
+}

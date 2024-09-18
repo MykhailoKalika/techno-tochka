@@ -1,8 +1,10 @@
-:host {
+:host section {
   background-color: black;
   display: flex;
   justify-content: space-between;
-  padding: 65px 100px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
 
   .footer-left {
     display: flex;
@@ -21,6 +23,12 @@
         text-align: center;
         text-decoration: underline;
         padding-right: 25px;
+      }
+    }
+
+    @media (min-width: 2100px) {
+      .links {
+        margin-left: 147px;
       }
     }
   }
