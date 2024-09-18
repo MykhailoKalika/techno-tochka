@@ -9,7 +9,6 @@ import {PricesSectionComponent} from "./sections/prices-section/prices-section.c
 import {NumbersSectionComponent} from "./sections/numbers-section/numbers-section.component";
 import {PopularQuestionsComponent} from "./sections/popular-questions/popular-questions.component";
 import {WaitingComponent} from "./sections/waiting/waiting.component";
-import {ReviewsComponent} from "./sections/reviews/reviews.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FooterComponent} from "./sections/footer/footer.component";
 
@@ -24,7 +23,6 @@ import {FooterComponent} from "./sections/footer/footer.component";
     MainDescriptionSectionComponent,
     PricesSectionComponent,
     NumbersSectionComponent,
-    ReviewsComponent,
     PopularQuestionsComponent,
     WaitingComponent,
     FooterComponent,
