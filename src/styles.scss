@@ -138,6 +138,17 @@ section.no-padding {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0;
+    height: auto;
+
+    @media (max-width: 1280px) {
+      font-size: 28px;
+      line-height: 32.81px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 21.09px;
+    }
 
     &:hover {
       background-color: transparent!important;
@@ -182,6 +193,16 @@ section.no-padding {
 
     p {
       margin: 0;
+    }
+
+    @media (max-width: 1280px) {
+      font-size: 20px;
+      line-height: 23.44px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      line-height: 14.06px;
     }
   }
 }
