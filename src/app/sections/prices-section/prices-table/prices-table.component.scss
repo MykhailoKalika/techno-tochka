@@ -1,4 +1,4 @@
-@mixin table-padding($padding) {
+@mixin tablePadding($padding) {
   td:first-child, th:first-child {
     padding-left: $padding;
   }
@@ -34,10 +34,14 @@
       text-align: end;
     }
 
-    @include table-padding(100px);
+    @include tablePadding(100px);
 
     @media (min-width: 2100px) {
-      @include table-padding(calc((100vw - 1950px) / 2));
+      @include tablePadding(calc((100vw - 1950px) / 2));
+    }
+
+    @media (max-width: 1280px) {
+      @include tablePadding(20px);
     }
   }
 }
