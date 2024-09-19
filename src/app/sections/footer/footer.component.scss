@@ -10,9 +10,15 @@
     padding-bottom: 24px;
   }
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+    row-gap: 15px;
+  }
 
-  .footer-left {
+  .footer-right {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 
     .links {
       display: flex;
@@ -24,8 +30,11 @@
       }
 
       @media (max-width: 600px) {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: start;
+        margin-left: 4px;
+        row-gap: 5px;
       }
 
       .link {
@@ -41,6 +50,10 @@
         @media (max-width: 1280px) {
           font-size: 16px;
           line-height: 18.75px;
+        }
+
+        @media (max-width: 600px) {
+          text-align: left;
         }
       }
     }
@@ -59,6 +72,10 @@
     @media (max-width: 1280px) {
       font-size: 14px;
       line-height: 16.41px;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 0;
     }
   }
 }
