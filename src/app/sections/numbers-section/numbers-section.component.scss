@@ -6,8 +6,20 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+
   app-countable-fact {
     width: 20vw;
     padding-right: 15px;
+
+    @media (max-width: 1024px) {
+      width: 50%;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 }
