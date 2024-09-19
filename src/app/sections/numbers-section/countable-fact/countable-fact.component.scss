@@ -1,5 +1,23 @@
 .blue-short-line {
   margin-bottom: 15px;
+  width: 200px;
+  display: block;
+}
+
+@media (max-width: 1280px) {
+  h2 {
+    line-height: 41.02px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    line-height: 32px;
+  }
+
+  .blue-short-line {
+    margin-bottom: 10px;
+  }
 }
 
 .description {
