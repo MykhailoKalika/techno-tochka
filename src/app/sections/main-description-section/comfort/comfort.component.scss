@@ -11,6 +11,7 @@ h2 {
 @media (max-width: 768px) {
   .facilities {
     flex-wrap: wrap;
+    row-gap: 30px;
     justify-content: center;
   }
 }

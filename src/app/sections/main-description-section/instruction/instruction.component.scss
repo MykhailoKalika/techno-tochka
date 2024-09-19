@@ -10,6 +10,25 @@
     line-height: 29.3px;
     text-align: left;
     color: #333333B2;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 21.09px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .instruction-text {
+      font-size: 20px;
+      line-height: 23.44px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .instruction-text {
+      font-size: 14px;
+      line-height: 16.41px;
+    }
   }
 
   .image-container {
