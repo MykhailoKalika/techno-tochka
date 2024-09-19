@@ -1,5 +1,5 @@
 h2 {
-  width: 800px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -7,11 +7,8 @@ h2 {
 
 .activities {
   display: flex;
-  justify-content: space-between;
-
-  @media (min-width: 2100px) {
-    justify-content: space-around;
-  }
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   .activity-container {
     display: flex;
@@ -27,5 +24,45 @@ h2 {
       text-align: center;
       margin-top: 40px;
     }
+  }
+}
+
+@media (max-width: 1280px) {
+  .activities .activity-container {
+    margin-top: 25px;
+
+    .image-container {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 260px;
+      height: 360px;
+
+      img {
+        transform: translateX(-30px);
+      }
+    }
+
+    span {
+      font-size: 22px;
+      line-height: 25.78px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .activities .activity-container {
+    span {
+      font-size: 18px;
+      line-height: 21.09px;
+      margin-top: 20px;
+      width: 280px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .activities .activity-container span {
+    width: auto;
   }
 }

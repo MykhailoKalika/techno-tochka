@@ -3,7 +3,9 @@
   <div class="activities">
     @for (activity of activities; track $index) {
       <div class="activity-container">
-        <img alt="facility-image" ngSrc="{{activity.imageUrl}}" [width]="320" [height]="360" priority/>
+        <div class="image-container">
+          <img alt="facility-image" ngSrc="{{activity.imageUrl}}" [width]="320" [height]="360" priority/>
+        </div>
         <span>{{activity.description}}</span>
       </div>
     }
