@@ -3,11 +3,18 @@
   height: 100vh;
   background: #E3F6FF;
 
+  section {
+    padding-bottom: 0;
+  }
+
   .header-content {
     display: flex;
+    height: calc(100vh - 85px);
 
     .service-center {
-      padding-top: 108px;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-bottom: 100px;
 
       .service-center-text {
         font-family: Roboto Flex, sans-serif;
@@ -19,11 +26,14 @@
     }
 
     .image-container {
-      position: absolute;
-      top: -30px;
-      left: 800px;
-      height: calc(100vh + 30px);
-      overflow-y: hidden;
+      margin-top: auto;
+      flex: 1;
+      text-align: center;
+
+      img {
+        height: 77vh;
+        width: auto;
+      }
     }
   }
 }
