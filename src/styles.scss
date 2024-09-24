@@ -26,6 +26,20 @@ h1 {
   line-height: 74.4px;
   text-align: left;
 
+  @media (max-width: 1280px) {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.68px;
+    text-align: center;
+  }
+
   &.underlined {
     margin-bottom: 10px;
   }
@@ -89,6 +103,7 @@ h5 {
 
 section {
   padding: 120px calc(100vw / 16);
+  overflow: hidden;
 
   &.first-section {
     padding-top: 35px;

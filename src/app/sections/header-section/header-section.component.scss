@@ -3,13 +3,29 @@
   height: 100vh;
   background: #E3F6FF;
 
+  @media (max-height: 600px) {
+    height: 600px;
+  }
+
   section {
     padding-bottom: 0;
+
+    &.first-section {
+      position: relative;
+    }
   }
 
   .header-content {
     display: flex;
     height: calc(100vh - 85px);
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    @media (max-height: 600px) {
+      height: calc(600px - 85px);
+    }
 
     .service-center {
       margin-top: auto;
@@ -22,6 +38,19 @@
         font-weight: 400;
         line-height: 37.5px;
         text-align: left;
+
+        @media (max-width: 1280px) {
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 32.81px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 23.44px;
+          text-align: center;
+        }
       }
 
       .phone-number-container {
@@ -30,13 +59,29 @@
         }
 
         .phone-number {
-          font-weight: 600;
+          font-weight: 500;
           font-size: 28px;
+
+          @media (max-width: 1280px) {
+            font-size: 24px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
 
         .phone-number-label {
           margin-bottom: 5px;
           font-size: 24px;
+
+          @media (max-width: 1280px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
         }
 
         margin-top: 25px;
@@ -61,6 +106,61 @@
       img {
         height: 77vh;
         width: auto;
+        padding-bottom: 2px;
+      }
+
+      @media (max-width: 1024px) {
+        position: absolute;
+        right: 30px;
+        bottom: 7px;
+
+        img {
+          height: auto;
+          width: 25vw;
+          transform: translateY(7px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+    .header-content {
+      flex-direction: column;
+      height: auto;
+
+      .service-center {
+        padding-bottom: 0;
+      }
+      .image-container {
+        position: initial;
+        padding-left: 0;
+
+        img {
+          width: 40vw;
+          height: auto;
+          transform: translateY(74px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header-content {
+      .image-container {
+        img {
+          width: 60vw;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .header-content {
+      .image-container {
+        img {
+          width: 80vw;
+        }
       }
     }
   }
