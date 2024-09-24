@@ -1,0 +1,17 @@
+<button class="burger-button" [matMenuTriggerFor]="menu" aria-label="icon-button with a menu" matTooltip="Меню">
+  <img class="burger-image" ngSrc="/assets/icons/icon-menu-burger.svg" height="40" width="42" alt="menu">
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <span>Ремонт</span>
+  </button>
+  <button mat-menu-item>
+    <span>Для клієнтів</span>
+  </button>
+  <button mat-menu-item>
+    <span>Поширені запитання</span>
+  </button>
+  <button [cdkCopyToClipboard]="'380660554122'" (cdkCopyToClipboardCopied)="copyingSuccessMessage()" mat-menu-item class="phone-number-option">
+    +380660554122
+  </button>
+</mat-menu>

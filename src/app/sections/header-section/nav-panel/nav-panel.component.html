@@ -3,19 +3,20 @@
     <img ngSrc="/assets/icons/logo-dark.svg" alt="logo" height="52" width="120" [priority]="0"/>
   </div>
   <ul class="nav-buttons">
-    <li>Ремонт</li>
-    <li>Для клієнтів</li>
+    <li class="maintenance-li">Ремонт</li>
+    <li class="for-clients-li">Для клієнтів</li>
 <!--    <li>Відгуки</li>-->
-    <li>Поширені запитання</li>
+    <li class="questions-li">Поширені запитання</li>
   </ul>
   <div class="contacts">
-    <span class="address">
+    <span class="address" (click)="redirectToGoogleMaps()">
       <img ngSrc="/assets/icons/carbon_location.svg" alt="address-icon" height="32" width="32">
-      Велика Димерка
+      Велика Димерка,<br> вул. Паркова 1
     </span>
-    <span class="phone-number">
+    <span class="phone-number" [cdkCopyToClipboard]="'380660554122'" (cdkCopyToClipboardCopied)="copyingSuccessMessage()">
       <img ngSrc="/assets/icons/material-symbols_call.svg" alt="address-icon" height="32" width="32">
       +380660554122
     </span>
+    <app-burger-menu (copyingSuccess)="copyingSuccessMessage()"></app-burger-menu>
   </div>
 </div>

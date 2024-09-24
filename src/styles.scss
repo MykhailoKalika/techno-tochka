@@ -107,6 +107,10 @@ section {
 
   &.first-section {
     padding-top: 35px;
+
+    @media (max-width: 768px) {
+      padding-top: 25px;
+    }
   }
 }
 
@@ -219,5 +223,13 @@ section.no-padding {
       font-size: 12px;
       line-height: 14.06px;
     }
+  }
+}
+
+.mat-mdc-menu-panel {
+  border-radius: 2px!important;
+  .mat-mdc-menu-content {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

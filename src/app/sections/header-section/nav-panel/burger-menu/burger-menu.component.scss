@@ -1,0 +1,26 @@
+.burger-button {
+  border: none;
+  background: none;
+  padding-right: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burger-image {
+  width: 42px;
+  height: 40px;
+
+  @media (max-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.phone-number-option {
+  display: none;
+  @media (max-width: 425px) {
+    display: initial;
+  }
+}
