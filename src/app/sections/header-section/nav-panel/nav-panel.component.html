@@ -3,10 +3,10 @@
     <img ngSrc="/assets/icons/logo-dark.svg" alt="logo" height="52" width="120" [priority]="0"/>
   </div>
   <ul class="nav-buttons">
-    <li class="maintenance-li">Ремонт</li>
-    <li class="for-clients-li">Для клієнтів</li>
+    <li class="maintenance-li" (click)="scrollTo('maintenanceScrollPoint')">Ремонт</li>
+    <li class="for-clients-li" (click)="scrollTo('forClientScrollPoint')">Для клієнтів</li>
 <!--    <li>Відгуки</li>-->
-    <li class="questions-li">Поширені запитання</li>
+    <li class="questions-li" (click)="scrollTo('popularQuestionsScrollPoint')">Поширені запитання</li>
   </ul>
   <div class="contacts">
     <span class="address" (click)="redirectToGoogleMaps()">

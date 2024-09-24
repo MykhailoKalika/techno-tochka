@@ -13,4 +13,10 @@ import {NgOptimizedImage} from "@angular/common";
 })
 export class FooterComponent {
 
+  scrollTo(id: string, option: ScrollLogicalPosition = 'start'): void {
+    const element = document.getElementById(id) as HTMLElement;
+    if (element) {
+      element.scrollIntoView({block: option});
+    }
+  }
 }

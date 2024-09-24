@@ -4,10 +4,10 @@
   </div>
   <div class="footer-right">
     <div class="links">
-      <span class="link">Ремонт</span>
-      <span class="link">Для клієнтів</span>
+      <span class="link" (click)="scrollTo('maintenanceScrollPoint')">Ремонт</span>
+      <span class="link" (click)="scrollTo('forClientScrollPoint')">Для клієнтів</span>
 <!--      <span class="link">Відгуки</span>-->
-      <span class="link">Поширені запитання</span>
+      <span class="link" (click)="scrollTo('popularQuestionsScrollPoint', 'end')">Поширені запитання</span>
     </div>
     <div class="year">
       &#64;2024-2025

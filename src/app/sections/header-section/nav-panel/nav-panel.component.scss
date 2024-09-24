@@ -15,6 +15,12 @@
     li {
       margin-right: 25px;
 
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
       &.maintenance-li {
         width: 48px;
       }

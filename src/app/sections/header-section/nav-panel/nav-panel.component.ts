@@ -29,4 +29,11 @@ export class NavPanelComponent {
   redirectToGoogleMaps() {
     window.location.href = 'https://maps.app.goo.gl/dgAbar66E4MbJChJ9';
   }
+
+  scrollTo(id: string): void {
+    const element = document.getElementById(id) as HTMLElement;
+    if (element) {
+      element.scrollIntoView({block: 'start'});
+    }
+  }
 }
