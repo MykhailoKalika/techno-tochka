@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {IActivity} from "../../interfaces/activity.interface";
 
@@ -19,7 +19,7 @@ export class WaitingComponent {
       imageUrl: '/assets/pictures/activity1.png',
     },
     {
-      description: 'Випити каву або чай прямо в сервісному центрі',
+      description: 'Випити каву або чай біля сервісного центру',
       imageUrl: '/assets/pictures/activity2.png',
     },
     {

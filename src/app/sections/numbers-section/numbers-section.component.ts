@@ -15,7 +15,7 @@ import {CountableFactComponent} from "./countable-fact/countable-fact.component"
 export class NumbersSectionComponent {
   public facts: ICountableAdvertFact[] = [
     {number: '11 років', description: 'займаємося ремонтом техніки'},
-    {number: '20 102', description: 'відремонтованих пристроїв станом на лютий 2023 року'},
+    {number: '20 102', description: 'відремонтованих пристроїв'},
     {number: '70%', description: 'техніки ремонтується протягом одного дня'},
     {number: '95%', description: 'клієнтів стають постійними рекомендують друзям'},
   ];
